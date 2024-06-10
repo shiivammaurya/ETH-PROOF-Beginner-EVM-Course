@@ -17,8 +17,8 @@ pragma solidity 0.8.18;
 
 contract MineToken {
      // Defining public variables
-    string public tokenName = "CRAFTERS";
-    string public tokenAbbrv = "META";
+    string public tokenName = "newToken";
+    string public tokenAbbrv = "NewTKN";
     uint public totalSupply = 0;
 
     // Mapping variables

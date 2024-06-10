@@ -22,17 +22,17 @@ contract MineToken {
     uint public totalSupply = 0;
 
     // Mapping variables
-    //Mapping is used to store the balance of addresses alloted
+    //It is used to store the balance of addresses alloted
     mapping(address => uint) public balances;
 
-    // Function to mint some new tokens
+    // Function mint allows the creation of new tokens
     function MintToken(address _address, uint _value) 
     public {
         totalSupply += _value;
         balances[_address] += _value;
     }
 
-    // Function to burn some old tokens
+    // Function burn enables the destruction of existing tokens
     function BurnToken(address _address, uint _value)
      public {
           if (balances[_address] >= _value){

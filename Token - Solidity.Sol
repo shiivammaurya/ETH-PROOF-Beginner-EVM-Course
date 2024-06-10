@@ -21,8 +21,7 @@ contract MineToken {
     string public tokenAbbrv = "NewTKN";
     uint public totalSupply = 0;
 
-    // Mapping variables
-    //It is used to store the balance of addresses alloted
+    // Mapping variables It is used to store the balance of addresses alloted
     mapping(address => uint) public balances;
 
     // Function mint allows the creation of new tokens
